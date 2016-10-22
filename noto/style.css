@@ -22,10 +22,12 @@ html {
     font-family: "Noto Sans", "Noto Sans CJK JP", "Noto Sans JP", sans-serif;
 }
 body {
-    display: none;
     font-size: 18px;
     line-height: 1.7;
 }
-html.wf-active body {
+.contents {
+    display: none;
+}
+html.wf-active .contents {
     display: block;
 }
