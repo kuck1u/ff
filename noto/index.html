@@ -16,15 +16,60 @@ body {
     font-size: 18px;
     line-height: 1.7;
 }
+.loader {
+    background: #fff;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    opacity: 1;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+    width: 100vw;
+    z-index: 9999;
+}
+.spinner {
+    -webkit-animation: spinner 1s linear infinite;
+    animation: spinner 1s linear infinite;
+    border-radius: 40px;
+    box-shadow: 0 4px 0 0 #59ebff;
+    display: block;
+    height: 80px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 80px;
+}
 .contents {
     display: none;
 }
-html.wf-active .contents {
+.wf-active .contents {
     display: block;
+}
+.wf-active .loader {
+    opacity: 0;
+}
+
+@keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
 }
 </style>
 </head>
 <body>
+<div class="loader">
+    <div class="spinner"></div>
+</div>
 <div class="contents">
     <p><a href="../default/">System Font</a></p>
     <p>権利もライセンス最小限と批判する方針なな以下、対話するれる台詞を-名重要の投稿状態でされるてはするな、百科の目的は、補足する記事に区別いいこととして引用重要でますばいるうで。</p>
