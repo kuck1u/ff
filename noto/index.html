@@ -9,6 +9,12 @@
 <meta http-equiv="x-dns-prefetch-control" content="on">
 <link rel='dns-prefetch' href='//fonts.gstatic.com'>
 <style>
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
 html {
     font-family: "Noto Sans", "Noto Sans CJK JP", "Noto Sans JP", sans-serif;
 }
@@ -46,6 +52,12 @@ body {
 }
 .contents {
     display: none;
+}
+html.wf-active,
+.wf-active body {
+    height: auto;
+    overflow: auto;
+    width: auto;
 }
 .wf-active .contents {
     display: block;
